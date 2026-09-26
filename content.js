@@ -1,264 +1,233 @@
-// GEGGI1984 STREAMING WEBSITE - EDITABLE CONTENT FILE
-// Edit this file to update website content without modifying HTML
-// All content is in Norwegian by default with English translations
+// Editable content for Geggi1984 website
+// Norwegian is the default language.
+// English translations are provided for the language switch.
 
 const siteContent = {
-  // Language translations for UI elements
   translations: {
     no: {
-      // Navigation
       nav: {
         home: "Hjem",
         live: "Direkte",
         clips: "Klipp",
         videos: "Videoer",
         schedule: "Streamplan",
+        news: "Nyheter",
         about: "Om meg",
         community: "Fellesskap",
         support: "Støtt",
         contact: "Kontakt"
       },
-      // Hero Section
       hero: {
-        title: "Hallo, jeg er Geggi1984",
-        subtitle: "Norsk gaming streamer med kompetitiv gameplay og dedikert community",
+        title: "Hei, jeg er Geggi1984",
+        subtitle: "Norsk gaming streamer med energi, humor og community i fokus",
         watchLive: "🎮 Se direkte",
-        support: "❤️ Støtt streamen"
+        support: "❤️ Støtt meg"
       },
-      // Live Stream Section
       live: {
-        title: "Direkte Stream",
+        title: "Direkte stream",
         watchOn: "Se på Twitch",
-        description: "Følg Geggi1984 på Twitch for live gaming streams hver uke. Her finner du høyenergi gameplay, spennende øyeblikk og aktiv community som er klar for action!",
-        button: "Åpne Twitch kanalen",
-        subscribe: "Abonner på kanalen"
+        description: "Følg med live når jeg spiller, snakker med communityet og deler gaming-opplevelser.",
+        button: "Gå til Twitch",
+        subscribe: "Abonner"
       },
-      // Clips Section
       clips: {
-        title: "Klipp",
-        subtitle: "De beste øyeblikkene fra mine streams",
-        empty: "Ingen klipp ennå. Besøk Twitch-kanalen for å se hele streamene!"
+        title: "Twitch-klipp",
+        subtitle: "De beste øyeblikkene fra streamene mine",
+        empty: "Ingen klipp er lagt ut ennå. Besøk Twitch-kanalen for å se mer."
       },
-      // Videos Section
       videos: {
         title: "Videoer",
-        subtitle: "YouTube highlights og gaming innhold",
-        empty: "Ingen videoer ennå. Abonner på YouTube-kanalen for oppdateringer!"
+        subtitle: "Highlights, guides og gaminginnhold",
+        empty: "Ingen videoer lagt ut ennå."
       },
-      // Schedule Section
       schedule: {
         title: "Streamplan",
-        subtitle: "Når streamer jeg?",
-        note: "Alle tider er i CET (Central European Time)",
-        monday: "Mandag",
-        tuesday: "Tirsdag",
-        wednesday: "Onsdag",
-        thursday: "Torsdag",
-        friday: "Fredag",
-        saturday: "Lørdag",
-        sunday: "Søndag"
+        subtitle: "Her ser du når jeg er live",
+        note: "Alle tider er i CET (Europe/Oslo)"
       },
-      // About Section
+      news: {
+        title: "Nyheter",
+        subtitle: "Oppdateringer, highlights og status",
+        empty: "Ingen nyheter oppdatert ennå."
+      },
       about: {
         title: "Om meg"
       },
-      // Community Section
       community: {
         title: "Fellesskap",
-        subtitle: "Bli med i communityet",
+        subtitle: "Bli med i fellesskapet",
         discord: "Discord",
-        discordDesc: "Chatt med andre gamere og få ping når jeg går live.",
-        joinDiscord: "Bli medlem",
-        twitch: "Twitch Chat",
-        twitchDesc: "Aktiv chat under hver stream. Vær en del av communityet!",
+        discordDesc: "Chat med andre, få oppdateringer og bli med i diskusjonene.",
+        joinDiscord: "Bli med",
+        twitch: "Twitch chat",
+        twitchDesc: "Delta i chatten under streamen og vær med i det hele.",
         openChat: "Åpne chat",
-        social: "Sosiale Medier",
-        socialDesc: "Følg for daglige oppdateringer og gaming innhold."
+        social: "Sosiale medier",
+        socialDesc: "Følg meg for oppdateringer, clips og gaminginnhold."
       },
-      // Support Section
       support: {
         title: "Støtt streamen",
         subtitle: "Hjelp meg med å lage bedre innhold",
         twitch: "Abonnement",
-        twitchDesc: "Abonner på Twitch-kanalen for eksklusivt innhold og støtte.",
+        twitchDesc: "Støtt meg på Twitch med et abonnement.",
         subscribe: "Abonner",
         vipps: "Vipps",
         vippsDesc: "Send en donasjon direkte via Vipps.",
-        tips: "Tips og Donasjon",
-        tipsDesc: "Støtt streamingen gjennom Twitch tips eller andre kanaler.",
-        donate: "Send Tips",
-        thanks: "Tusen takk for all støtten! Det betyr alt for meg og hjelper meg å lage enda bedre innhold."
+        tips: "Tips og donasjon",
+        tipsDesc: "Hjelp meg å fortsette med streamingen.",
+        donate: "Send tips",
+        thanks: "Tusen takk for all støtten! Det betyr mye for meg."
       },
-      // Contact Section
       contact: {
         title: "Kontakt",
-        subtitle: "Ta kontakt med meg",
+        subtitle: "Ta kontakt",
         email: "E-post",
         twitch: "Twitch",
-        social: "Sosiale Medier"
+        social: "Sosiale medier"
       },
-      // Footer
       footer: {
         rights: "Alle rettigheter reservert."
       }
     },
     en: {
-      // Navigation
       nav: {
         home: "Home",
         live: "Live",
         clips: "Clips",
         videos: "Videos",
         schedule: "Schedule",
+        news: "News",
         about: "About",
         community: "Community",
         support: "Support",
         contact: "Contact"
       },
-      // Hero Section
       hero: {
-        title: "Hello, I'm Geggi1984",
-        subtitle: "Norwegian gaming streamer with competitive gameplay and dedicated community",
-        watchLive: "🎮 Watch Live",
-        support: "❤️ Support Stream"
+        title: "Hi, I'm Geggi1984",
+        subtitle: "Norwegian gaming streamer with energy, humor and a strong community",
+        watchLive: "🎮 Watch live",
+        support: "❤️ Support me"
       },
-      // Live Stream Section
       live: {
-        title: "Live Stream",
+        title: "Live stream",
         watchOn: "Watch on Twitch",
-        description: "Follow Geggi1984 on Twitch for live gaming streams every week. Find high-energy gameplay, exciting moments, and an active community ready for action!",
-        button: "Open Twitch Channel",
-        subscribe: "Subscribe to Channel"
+        description: "Follow along live while I play, chat with the community, and share gaming experiences.",
+        button: "Go to Twitch",
+        subscribe: "Subscribe"
       },
-      // Clips Section
       clips: {
-        title: "Clips",
+        title: "Twitch clips",
         subtitle: "The best moments from my streams",
-        empty: "No clips yet. Visit the Twitch channel to watch full streams!"
+        empty: "No clips posted yet. Visit the Twitch channel for more."
       },
-      // Videos Section
       videos: {
         title: "Videos",
-        subtitle: "YouTube highlights and gaming content",
-        empty: "No videos yet. Subscribe to the YouTube channel for updates!"
+        subtitle: "Highlights, guides and gaming content",
+        empty: "No videos posted yet."
       },
-      // Schedule Section
       schedule: {
-        title: "Stream Schedule",
-        subtitle: "When do I stream?",
-        note: "All times are in CET (Central European Time)",
-        monday: "Monday",
-        tuesday: "Tuesday",
-        wednesday: "Wednesday",
-        thursday: "Thursday",
-        friday: "Friday",
-        saturday: "Saturday",
-        sunday: "Sunday"
+        title: "Stream schedule",
+        subtitle: "See when I am live",
+        note: "All times are in CET (Europe/Oslo)"
       },
-      // About Section
+      news: {
+        title: "News",
+        subtitle: "Updates, highlights and status",
+        empty: "No news posted yet."
+      },
       about: {
-        title: "About Me"
+        title: "About me"
       },
-      // Community Section
       community: {
         title: "Community",
         subtitle: "Join the community",
         discord: "Discord",
-        discordDesc: "Chat with other gamers and get notified when I go live.",
-        joinDiscord: "Join",
-        twitch: "Twitch Chat",
-        twitchDesc: "Active chat during every stream. Be part of the community!",
-        openChat: "Open Chat",
-        social: "Social Media",
-        socialDesc: "Follow for daily updates and gaming content."
+        discordDesc: "Chat with others, get updates and join the conversation.",
+        joinDiscord: "Join now",
+        twitch: "Twitch chat",
+        twitchDesc: "Join the chat during the stream and be part of the action.",
+        openChat: "Open chat",
+        social: "Social media",
+        socialDesc: "Follow me for updates, clips and gaming content."
       },
-      // Support Section
       support: {
-        title: "Support the Stream",
+        title: "Support the stream",
         subtitle: "Help me create better content",
-        twitch: "Subscribe",
-        twitchDesc: "Subscribe to the Twitch channel for exclusive content and support.",
+        twitch: "Subscription",
+        twitchDesc: "Support me on Twitch with a subscription.",
         subscribe: "Subscribe",
         vipps: "Vipps",
         vippsDesc: "Send a donation directly via Vipps.",
-        tips: "Tips and Donations",
-        tipsDesc: "Support the stream through Twitch tips or other channels.",
-        donate: "Send Tip",
-        thanks: "Thank you for all the support! It means everything to me and helps me create even better content."
+        tips: "Tips and donation",
+        tipsDesc: "Help me keep the stream running.",
+        donate: "Send tip",
+        thanks: "Thank you so much for all the support! It means a lot to me."
       },
-      // Contact Section
       contact: {
         title: "Contact",
-        subtitle: "Get in touch with me",
+        subtitle: "Get in touch",
         email: "Email",
         twitch: "Twitch",
-        social: "Social Media"
+        social: "Social media"
       },
-      // Footer
       footer: {
         rights: "All rights reserved."
       }
     }
   },
 
-  // EDITABLE: Twitch Clips
-  // Add your Twitch clips here. Get clip URLs from twitch.tv
   clips: [
     {
-      title_no: "Epic Gaming Moment",
-      title_en: "Epic Gaming Moment",
+      title_no: "Kampens høydepunkt",
+      title_en: "Match highlight",
       url: "https://www.twitch.tv/geggi1984/clip/ExampleClip1",
-      thumbnail: "https://via.placeholder.com/300x169?text=Clip+1"
+      thumbnail: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
     },
     {
-      title_no: "Fantastisk Gameplay",
-      title_en: "Amazing Gameplay",
+      title_no: "Rasende finale",
+      title_en: "Crazy finish",
       url: "https://www.twitch.tv/geggi1984/clip/ExampleClip2",
-      thumbnail: "https://via.placeholder.com/300x169?text=Clip+2"
+      thumbnail: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80"
     },
     {
-      title_no: "Spenstig Finale",
-      title_en: "Exciting Finale",
+      title_no: "Community-moment",
+      title_en: "Community moment",
       url: "https://www.twitch.tv/geggi1984/clip/ExampleClip3",
-      thumbnail: "https://via.placeholder.com/300x169?text=Clip+3"
+      thumbnail: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=800&q=80"
     }
   ],
 
-  // EDITABLE: YouTube Videos
-  // Add your YouTube videos here. Get video IDs from youtube.com
   videos: [
     {
-      title_no: "Gaming Tutorial - Del 1",
-      title_en: "Gaming Tutorial - Part 1",
+      title_no: "Gaming tutorial del 1",
+      title_en: "Gaming tutorial part 1",
       videoId: "dQw4w9WgXcQ",
-      description_no: "Lær de grunnleggende strategiene for å forbedre ditt gameplay.",
-      description_en: "Learn the basic strategies to improve your gameplay."
+      description_no: "En kort guide til bedre gameplay og bedre beslutninger.",
+      description_en: "A short guide to better gameplay and smarter decisions."
     },
     {
-      title_no: "Høydepunkter fra Streamen",
-      title_en: "Stream Highlights",
-      videoId: "jNQXAC9IVRw",
-      description_no: "De beste øyeblikkene fra denne ukas streams.",
-      description_en: "The best moments from this week's streams."
+      title_no: "Highlight fra streamen",
+      title_en: "Stream highlight",
+      videoId: "ScMz7w6DENS",
+      description_no: "De mest intense øyeblikkene fra siste stream.",
+      description_en: "The most intense moments from the latest stream."
     },
     {
-      title_no: "Speedrun Challenge",
-      title_en: "Speedrun Challenge",
-      videoId: "9bZkp7q19f0",
-      description_no: "Jeg prøver å sette en ny personlig rekord!",
-      description_en: "I attempt to set a new personal record!"
+      title_no: "Gaming challenge",
+      title_en: "Gaming challenge",
+      videoId: "ysz5S0t7zXJ0",
+      description_no: "Et nytt mål og en ny utfordring for communityet.",
+      description_en: "A new goal and challenge for the community."
     }
   ],
 
-  // EDITABLE: Stream Schedule
-  // Set your streaming schedule here. Times in 24-hour format (HH:MM)
   schedule: [
     {
       day_no: "Mandag",
       day_en: "Monday",
       time: "19:00",
-      game_no: "Counter-Strike 2",
-      game_en: "Counter-Strike 2",
+      game_no: "CS2",
+      game_en: "CS2",
       status_no: "Planlagt",
       status_en: "Scheduled"
     },
@@ -275,75 +244,65 @@ const siteContent = {
       day_no: "Fredag",
       day_en: "Friday",
       time: "19:00",
-      game_no: "Varied Games",
-      game_en: "Varied Games",
-      status_no: "Planlagt",
-      status_en: "Scheduled"
+      game_no: "Kombinert gaming",
+      game_en: "Mixed gaming",
+      status_no: "Live",
+      status_en: "Live"
     },
     {
       day_no: "Lørdag",
       day_en: "Saturday",
       time: "18:00",
-      game_no: "Turneringer",
-      game_en: "Tournaments",
-      status_no: "Planlagt",
-      status_en: "Scheduled"
-    },
-    {
-      day_no: "Søndag",
-      day_en: "Sunday",
-      time: "19:00",
-      game_no: "Chill Gaming",
-      game_en: "Chill Gaming",
+      game_no: "Turer / highlights",
+      game_en: "Challenges / highlights",
       status_no: "Planlagt",
       status_en: "Scheduled"
     }
   ],
 
-  // EDITABLE: About Section Text
+  news: [
+    {
+      date: "15. aug 2026",
+      title_no: "Ny streamhelg kommer snart",
+      title_en: "New stream weekend coming soon",
+      excerpt_no: "Jeg jobber med nye timer, nye spill og enda mer community-aktivitet.",
+      excerpt_en: "I am preparing new hours, new games and even more community activity."
+    },
+    {
+      date: "05. aug 2026",
+      title_no: "Highlights fra siste stream",
+      title_en: "Highlights from the latest stream",
+      excerpt_no: "Sjekk de beste øyeblikkene og se hva som skjedde i chatten.",
+      excerpt_en: "Check out the best moments and see what happened in chat."
+    },
+    {
+      date: "22. jul 2026",
+      title_no: "Ny Discord-server i gang",
+      title_en: "New Discord server live",
+      excerpt_no: "Communityet kan nå samles i en egen kanal for samtaler og oppdateringer.",
+      excerpt_en: "The community can now gather in a dedicated channel for conversations and updates."
+    }
+  ],
+
   about: {
-    text_no: "Hei! Jeg er Geggi1984, en norsk gaming streamer dedikert til kompetitiv gaming og å bygge et sterkt community. Med flere år av erfaring innen esports, tilbringer jeg dagene med å perfeksjonere mine ferdigheter og å skape underholdende innhold for mine seere.\n\nJeg streamer primært kompetitive titler som Counter-Strike 2, Valorant og andre populære spill. Mitt mål er å inspirere andre gamere, dele kunnskapen min og bygge et positivt og inkluderende community hvor alle føler seg velkommen.\n\nVed siden av streaming, er jeg aktiv på sosiale medier og engasjerer meg med communityet gjennom Discord, YouTube og andre plattformer. Takk for at du er en del av reisen min!",
-    text_en: "Hi! I'm Geggi1984, a Norwegian gaming streamer dedicated to competitive gaming and building a strong community. With several years of experience in esports, I spend my days perfecting my skills and creating entertaining content for my viewers.\n\nI primarily stream competitive titles like Counter-Strike 2, Valorant, and other popular games. My goal is to inspire other gamers, share my knowledge, and build a positive and inclusive community where everyone feels welcome.\n\nBesides streaming, I'm active on social media and engage with the community through Discord, YouTube, and other platforms. Thank you for being part of my journey!"
+    text_no: "Jeg er Geggi1984, en norsk gaming streamer som elsker å dele opplevelser, konkurranse og godt humør med communityet. Her finner du live streams, klipp, videoer og oppdateringer fra gamingverdenen.",
+    text_en: "I am Geggi1984, a Norwegian gaming streamer who loves sharing experiences, competition and good energy with the community. Here you will find live streams, clips, videos and updates from the gaming world."
   },
 
-  // EDITABLE: Social Media Links
-  // Add or remove social links as needed
   socialLinks: [
-    {
-      name: "Twitch",
-      icon: "📺",
-      url: "https://www.twitch.tv/geggi1984"
-    },
-    {
-      name: "YouTube",
-      icon: "📹",
-      url: "https://www.youtube.com/@geggi1984"
-    },
-    {
-      name: "Twitter/X",
-      icon: "𝕏",
-      url: "https://twitter.com/geggi1984"
-    },
-    {
-      name: "Instagram",
-      icon: "📷",
-      url: "https://www.instagram.com/geggi1984"
-    },
-    {
-      name: "Discord",
-      icon: "💬",
-      url: "https://discord.gg/geggi1984"
-    }
+    { name: "Twitch", icon: "📺", url: "https://www.twitch.tv/geggi1984" },
+    { name: "YouTube", icon: "📹", url: "https://www.youtube.com/@geggi1984" },
+    { name: "Instagram", icon: "📷", url: "https://www.instagram.com/geggi1984" },
+    { name: "X / Twitter", icon: "𝕏", url: "https://x.com/geggi1984" },
+    { name: "Discord", icon: "💬", url: "https://discord.gg/geggi1984" }
   ],
 
-  // EDITABLE: Contact Information
   contact: {
     email: "kontakt@geggi1984.no",
     discordServer: "https://discord.gg/geggi1984",
-    vippsNumber: "+47 123 45 678" // Vipps phone number
+    vippsNumber: "123 45 678"
   },
 
-  // EDITABLE: Support Links
   support: {
     twitchSubscribe: "https://www.twitch.tv/geggi1984/subscribe",
     twitchTips: "https://www.twitch.tv/geggi1984",
@@ -351,7 +310,4 @@ const siteContent = {
   }
 };
 
-// Export for use in script.js
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = siteContent;
-}
+window.siteContent = siteContent;
