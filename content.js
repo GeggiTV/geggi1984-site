@@ -197,13 +197,7 @@ const siteContent = {
     }
   ],
 
-  videos: [
-    {
-      title_no: "Gaming tutorial del 1",
-      title_en: "Gaming tutorial part 1",
-      videoId: "dQw4w9WgXcQ",
-      description_no: "En kort guide til bedre gameplay og bedre beslutninger.",
-      description_en: "A short guide to better gameplay and smarter decisions."
+  videos: 
     },
     {
       title_no: "007 First Light",
@@ -213,20 +207,7 @@ const siteContent = {
       description_en: ""
       },
     {
-      title_no: "Highlight fra streamen",
-      title_en: "Stream highlight",
-      videoId: "ScMz7w6DENS",
-      description_no: "De mest intense øyeblikkene fra siste stream.",
-      description_en: "The most intense moments from the latest stream."
-    },
-    {
-      title_no: "Gaming challenge",
-      title_en: "Gaming challenge",
-      videoId: "ysz5S0t7zXJ0",
-      description_no: "Et nytt mål og en ny utfordring for communityet.",
-      description_en: "A new goal and challenge for the community."
-    }
-  ],
+      
 
   schedule: [
     {
