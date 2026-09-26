@@ -197,16 +197,15 @@ const siteContent = {
     }
   ],
 
-  videos: 
-    },
-    {
-      title_no: "007 First Light",
-      title_en: "007 First Light",
-      videoId: "q7-mz5k1TsU",
-      description_no: "",
-      description_en: ""
-      },
-    {
+  videos: videos: [
+  {
+    title_no: "007 First Light",
+    title_en: "007 First Light",
+    videoId: "q7-mz5k1TsU",
+    description_no: "",
+    description_en: ""
+  }
+],
       
 
   schedule: [
