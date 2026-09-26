@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GeggiTV - Norwegian gaming streamer | Twitch live streams, clips, and community">
-  <title>GeggiTV | Norwegian Gaming Streamer</title>
+  <meta name="description" content="GeggiTV - Norsk gaming streamer på Twitch. Se live streams, videoer og mer.">
+  <title>GeggiTV | Norsk Gaming Streamer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary: #7c3aed;
@@ -15,16 +15,16 @@
       --secondary: #06b6d4;
       --secondary-light: #22d3ee;
       --accent: #ec4899;
-      --dark-bg: #0f172a;
-      --dark-surface: #1e293b;
-      --dark-card: #334155;
+      --dark-bg: #0a0e27;
+      --dark-surface: #1a1f35;
+      --dark-card: #2d3748;
       --text-primary: #f1f5f9;
       --text-secondary: #cbd5e1;
       --text-muted: #94a3b8;
-      --border-color: rgba(148, 163, 184, 0.2);
+      --border-color: rgba(148, 163, 184, 0.15);
       --success: #10b981;
-      --neon-glow: 0 0 20px rgba(124, 58, 237, 0.6);
-      --neon-glow-cyan: 0 0 20px rgba(6, 182, 212, 0.6);
+      --neon-glow: 0 0 20px rgba(124, 58, 237, 0.5);
+      --neon-glow-cyan: 0 0 20px rgba(6, 182, 212, 0.5);
     }
 
     * {
@@ -38,8 +38,8 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #0f172a 0%, #1a1f35 50%, #0f172a 100%);
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0a0e27 0%, #1a1f35 50%, #0a0e27 100%);
       color: var(--text-primary);
       line-height: 1.6;
       min-height: 100vh;
@@ -52,8 +52,9 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle at 20% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
-                  radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
       pointer-events: none;
       z-index: 0;
     }
@@ -64,12 +65,12 @@
       padding: 0 20px;
     }
 
-    /* Header & Navigation */
+    /* Header */
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(15, 23, 42, 0.95);
+      background: rgba(10, 14, 39, 0.95);
       backdrop-filter: blur(10px);
       border-bottom: 2px solid var(--primary);
       box-shadow: 0 4px 20px rgba(124, 58, 237, 0.1);
@@ -83,22 +84,15 @@
     }
 
     .logo {
-      font-family: 'Orbitron', monospace;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 1.8rem;
-      font-weight: 900;
+      font-weight: 700;
       background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
       text-decoration: none;
-    }
-
-    .logo::before {
-      content: '🎮';
-      font-size: 2rem;
+      letter-spacing: 1px;
     }
 
     .nav-links {
@@ -111,6 +105,7 @@
       color: var(--text-secondary);
       text-decoration: none;
       font-weight: 500;
+      font-size: 0.95rem;
       transition: all 0.3s ease;
       position: relative;
     }
@@ -179,7 +174,7 @@
       cursor: pointer;
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
       padding: 60px 0 80px;
       position: relative;
@@ -194,77 +189,43 @@
     }
 
     .hero-text h1 {
-      font-family: 'Orbitron', monospace;
-      font-size: 3.5rem;
-      font-weight: 900;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.2rem;
+      font-weight: 700;
       line-height: 1.2;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
-    .hero-text p {
-      font-size: 1.2rem;
+    .hero-text > p {
+      font-size: 1.15rem;
       color: var(--text-secondary);
       margin-bottom: 2rem;
       line-height: 1.8;
     }
 
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-
-    .stat-item {
-      background: rgba(30, 41, 59, 0.6);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-      backdrop-filter: blur(10px);
-    }
-
-    .stat-number {
-      font-size: 2rem;
-      font-weight: 700;
-      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .stat-label {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-    }
-
-    .hero-actions {
+    .hero-cta {
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
-      margin: 2rem 0;
+      margin-bottom: 2rem;
     }
 
     .hero-visual {
-      background: linear-gradient(135deg, rgba(124, 58, 237, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
       border: 2px solid var(--primary);
       border-radius: 16px;
       padding: 2rem;
       text-align: center;
-      box-shadow: 0 0 40px rgba(124, 58, 237, 0.2);
+      box-shadow: 0 0 40px rgba(124, 58, 237, 0.15);
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 300px;
-    }
-
-    .hero-visual-content {
-      text-align: center;
+      min-height: 350px;
+      flex-direction: column;
     }
 
     .hero-visual-icon {
@@ -272,27 +233,10 @@
       margin-bottom: 1rem;
     }
 
-    .status-badge {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background: rgba(16, 185, 129, 0.2);
-      border: 1px solid var(--success);
-      border-radius: 20px;
-      color: var(--success);
-      font-size: 0.9rem;
-      font-weight: 600;
+    .hero-visual h3 {
+      font-size: 1.5rem;
       margin-bottom: 1rem;
-    }
-
-    .status-badge::before {
-      content: '●';
-      margin-right: 0.5rem;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
+      color: var(--secondary-light);
     }
 
     /* Sections */
@@ -303,9 +247,9 @@
     }
 
     section h2 {
-      font-family: 'Orbitron', monospace;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 2.5rem;
-      font-weight: 900;
+      font-weight: 700;
       margin-bottom: 1rem;
       background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
       -webkit-background-clip: text;
@@ -319,191 +263,211 @@
       margin-bottom: 3rem;
     }
 
-    /* Schedule Section */
-    .schedule-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .schedule-card {
-      background: rgba(30, 41, 59, 0.6);
+    /* About Section */
+    .about-content {
+      background: rgba(30, 41, 59, 0.5);
       border: 1px solid var(--border-color);
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 3rem;
       backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-    }
-
-    .schedule-card:hover {
-      border-color: var(--primary);
-      background: rgba(30, 41, 59, 0.8);
-      box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
-    }
-
-    .day-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .day-badge {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.9rem;
-      min-width: 60px;
-      text-align: center;
-    }
-
-    .day-title {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .day-title strong {
-      font-size: 1.1rem;
-    }
-
-    .day-time {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    .schedule-tag {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      background: rgba(6, 182, 212, 0.2);
-      border: 1px solid var(--secondary);
-      border-radius: 20px;
-      color: var(--secondary-light);
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-top: 1rem;
-    }
-
-    /* About Section */
-    .about-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
       margin-top: 2rem;
     }
 
-    .about-card {
-      background: rgba(30, 41, 59, 0.6);
+    .about-content p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Twitch Section */
+    .twitch-section {
+      margin-top: 2rem;
+    }
+
+    .twitch-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .twitch-info {
+      background: rgba(30, 41, 59, 0.5);
       border: 1px solid var(--border-color);
       border-radius: 12px;
       padding: 2rem;
       backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-      text-align: center;
     }
 
-    .about-card:hover {
+    .twitch-info h3 {
+      color: var(--secondary-light);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .twitch-info p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .twitch-button {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: var(--neon-glow);
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .twitch-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(124, 58, 237, 0.8);
+    }
+
+    .twitch-embed {
+      background: rgba(30, 41, 59, 0.5);
+      border: 2px solid var(--primary);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .twitch-placeholder {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Videos Section */
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .video-card {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .video-card:hover {
       border-color: var(--primary);
       box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
       transform: translateY(-5px);
     }
 
-    .about-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+    .video-placeholder {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      border-bottom: 1px solid var(--border-color);
     }
 
-    .about-card h3 {
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
+    .video-info {
+      padding: 1.5rem;
+    }
+
+    .video-info h3 {
       color: var(--secondary-light);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
     }
 
-    .about-card p {
-      color: var(--text-secondary);
-      line-height: 1.7;
+    .video-info p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
     }
 
-    /* Links Section */
-    .links-grid {
+    .video-button {
+      color: var(--secondary-light);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .video-button:hover {
+      color: var(--secondary);
+      gap: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-content {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 3rem;
+      backdrop-filter: blur(10px);
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .contact-info {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
     }
 
-    .link-card {
-      background: rgba(30, 41, 59, 0.6);
-      border: 2px solid var(--border-color);
-      border-radius: 12px;
-      padding: 2rem;
-      text-align: center;
-      backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      color: inherit;
+    .contact-item {
+      padding: 1.5rem;
+      background: rgba(45, 55, 72, 0.3);
+      border-radius: 8px;
     }
 
-    .link-card:hover {
-      border-color: var(--secondary);
-      box-shadow: var(--neon-glow-cyan);
-      transform: scale(1.05);
-    }
-
-    .link-icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .link-card h3 {
-      font-size: 1.3rem;
+    .contact-item h3 {
+      color: var(--secondary-light);
       margin-bottom: 0.5rem;
-      color: var(--secondary-light);
     }
 
-    /* Footer */
-    footer {
-      background: rgba(15, 23, 42, 0.95);
-      border-top: 2px solid var(--primary);
-      padding: 2rem 0;
-      margin-top: 4rem;
-    }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .footer-links a {
+    .contact-item p {
       color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.3s ease;
     }
 
-    .footer-links a:hover {
-      color: var(--secondary-light);
-    }
-
-    .social-links {
+    .contact-links {
       display: flex;
       gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
     }
 
     .social-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background: rgba(124, 58, 237, 0.2);
       border: 2px solid var(--primary);
@@ -517,9 +481,20 @@
       background: var(--primary);
       color: white;
       box-shadow: var(--neon-glow);
+      transform: scale(1.1);
     }
 
-    /* Responsive Design */
+    /* Footer */
+    footer {
+      background: rgba(10, 14, 39, 0.95);
+      border-top: 2px solid var(--primary);
+      padding: 2rem 0;
+      margin-top: 4rem;
+      text-align: center;
+      color: var(--text-secondary);
+    }
+
+    /* Responsive */
     @media (max-width: 768px) {
       .nav-links {
         display: none;
@@ -528,7 +503,7 @@
         left: 0;
         right: 0;
         flex-direction: column;
-        background: rgba(15, 23, 42, 0.98);
+        background: rgba(10, 14, 39, 0.98);
         padding: 1rem;
         gap: 1rem;
       }
@@ -547,18 +522,10 @@
       }
 
       .hero-text h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
 
-      .hero-visual {
-        min-height: 250px;
-      }
-
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-actions {
+      .hero-cta {
         flex-direction: column;
       }
 
@@ -567,22 +534,15 @@
         justify-content: center;
       }
 
-      .schedule-grid {
+      .twitch-container {
         grid-template-columns: 1fr;
       }
 
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-content {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .footer-links {
-        flex-direction: column;
-        gap: 0.5rem;
+      .about-content,
+      .twitch-info,
+      .twitch-embed,
+      .contact-content {
+        padding: 1.5rem;
       }
 
       section h2 {
@@ -592,28 +552,23 @@
 
     @media (max-width: 480px) {
       .hero-text h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
 
-      .hero-text p {
-        font-size: 1rem;
+      .logo {
+        font-size: 1.4rem;
       }
 
-      .btn {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
+      .nav-links {
+        gap: 0.5rem;
       }
 
       section h2 {
         font-size: 1.5rem;
       }
 
-      .stat-item {
-        padding: 1rem;
-      }
-
-      .stat-number {
-        font-size: 1.5rem;
+      .contact-info {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -625,174 +580,171 @@
       <nav>
         <a href="#" class="logo">GeggiTV</a>
         <ul class="nav-links" id="navLinks">
-          <li><a href="#about">About</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#links">Connect</a></li>
+          <li><a href="#om">Om</a></li>
+          <li><a href="#twitch">Twitch</a></li>
+          <li><a href="#videoer">Videoer</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
         </ul>
         <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <div class="status-badge">Live on Twitch</div>
-          <h1>Welcome to GeggiTV</h1>
-          <p>Norwegian gaming streamer bringing high-energy gameplay, community moments, and unforgettable streams. Join the adventure!</p>
-          
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-number">250K+</div>
-              <div class="stat-label">Total Views</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">5</div>
-              <div class="stat-label">Streams Weekly</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">4.9/5</div>
-              <div class="stat-label">Community Rating</div>
-            </div>
-          </div>
-
-          <div class="hero-actions">
+          <h1>Hei, jeg er GeggiTV</h1>
+          <p>Norsk gaming streamer som lager høyenergi-streams med kompetitiv gameplay, spennende øyeblikk og dedikert community. Bli med på aventyret!</p>
+          <div class="hero-cta">
             <a href="https://www.twitch.tv/geggi1984" target="_blank" class="btn btn-primary">
-              🎮 Watch Live on Twitch
+              🎮 Se på Twitch
             </a>
-            <a href="https://www.youtube.com/@geggi1984" target="_blank" class="btn btn-secondary">
-              ▶ YouTube Channel
+            <a href="#twitch" class="btn btn-secondary">
+              Lær mer
             </a>
           </div>
         </div>
 
         <div class="hero-visual">
-          <div class="hero-visual-content">
-            <div class="hero-visual-icon">🎮</div>
-            <h3>Gaming Streams</h3>
-            <p style="color: var(--text-secondary); margin-top: 1rem;">
-              Competitive gameplay, exciting moments, and community fun every week.
-            </p>
+          <div class="hero-visual-icon">🎮</div>
+          <h3>GeggiTV</h3>
+          <p>Norsk gaming streamer dedikert til høyt nivå gameplay og underholdning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Om Seksjonen -->
+  <section id="om">
+    <div class="container">
+      <h2>Om GeggiTV</h2>
+      <p class="section-subtitle">Norsk gaming kultur og streamingkvalitet</p>
+      
+      <div class="about-content">
+        <p>Hei! Jeg er GeggiTV, en norsk gaming streamer som er lidenskapelig opptatt av å levere underholdende og høyenergi streams til mitt community. Med fokus på kompetitiv gameplay, spennende øyeblikk og autentisk interaksjon med seerne, skapte jeg et sted hvor vi kan dele stunden av gaming glede sammen.</p>
+        
+        <p>Mitt mål er å vise norsk gaming kultur på verdensscenen og bygge et community av mennesker som elsker gaming like mye som meg. Uansett om du er her for de intense ranked-sesjonene eller bare for å slappe av og ha det gøy, er det alltid plass for deg i min stream.</p>
+
+        <p>Takk for at du besøker kanalen min. Det betyr mye å meg!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Twitch Seksjonen -->
+  <section id="twitch" class="twitch-section">
+    <div class="container">
+      <h2>Twitch</h2>
+      <p class="section-subtitle">Se mine live streams på Twitch</p>
+      
+      <div class="twitch-container">
+        <div class="twitch-info">
+          <h3>Geggi1984 på Twitch</h3>
+          <p>Jeg streamer regelmessig høyenergi gaming sessions med fokus på kompetitiv gameplay og community interaksjon.</p>
+          <p>Besøk kanalen min på Twitch for live streams, clips og mer. Du kan også følge kanalen for notifikasjoner når jeg går live.</p>
+          <a href="https://www.twitch.tv/geggi1984" target="_blank" class="twitch-button">
+            🟣 Åpne Twitch Kanal
+          </a>
+        </div>
+
+        <div class="twitch-embed">
+          <div class="twitch-placeholder">📺</div>
+          <p>Besøk Twitch-kanalen min for live streams</p>
+          <a href="https://www.twitch.tv/geggi1984" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+            Se Live Streams
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videoer Seksjonen -->
+  <section id="videoer">
+    <div class="container">
+      <h2>YouTube Videoer</h2>
+      <p class="section-subtitle">Se highlights og fullt innhold på YouTube</p>
+      
+      <div class="videos-grid">
+        <div class="video-card">
+          <div class="video-placeholder">▶️</div>
+          <div class="video-info">
+            <h3>YouTube Kanal</h3>
+            <p>Se fullstendige VOD-er, highlights og spesialinnhold på min YouTube-kanal.</p>
+            <a href="https://www.youtube.com/@geggi1984" target="_blank" class="video-button">
+              Åpne YouTube →
+            </a>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-placeholder">🎬</div>
+          <div class="video-info">
+            <h3>Gaming Highlights</h3>
+            <p>De beste øyeblikkene fra mine streams, redigert og klar for visning.</p>
+            <a href="https://www.youtube.com/@geggi1984" target="_blank" class="video-button">
+              Se Highlights →
+            </a>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-placeholder">🎮</div>
+          <div class="video-info">
+            <h3>Gameplay VODs</h3>
+            <p>Fullstendige streamer arkivert på YouTube for deg som vil se alt innhold.</p>
+            <a href="https://www.youtube.com/@geggi1984" target="_blank" class="video-button">
+              Se VODs →
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Schedule Section -->
-  <section id="schedule">
+  <!-- Kontakt Seksjonen -->
+  <section id="kontakt">
     <div class="container">
-      <h2>Stream Schedule</h2>
-      <p class="section-subtitle">Join me for high-energy gaming sessions throughout the week</p>
+      <h2>Kontakt & Sosiale Medier</h2>
+      <p class="section-subtitle">Følg meg og bli del av communityet</p>
       
-      <div class="schedule-grid">
-        <div class="schedule-card">
-          <div class="day-header">
-            <div class="day-badge">Mon</div>
-            <div class="day-title">
-              <strong>Challenge Night</strong>
-              <span class="day-time">8:00 PM CET</span>
-            </div>
-          </div>
-          <span class="schedule-tag">Competitive</span>
-        </div>
+      <div class="contact-content">
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">
+          Følg meg på sosiale medier for oppdateringer, streamer times og communitynyheter. Du kan også kontakte meg gjennom Discord eller sosiale kanaler.
+        </p>
 
-        <div class="schedule-card">
-          <div class="day-header">
-            <div class="day-badge">Wed</div>
-            <div class="day-title">
-              <strong>Co-op Session</strong>
-              <span class="day-time">7:30 PM CET</span>
-            </div>
-          </div>
-          <span class="schedule-tag">Multiplayer</span>
-        </div>
-
-        <div class="schedule-card">
-          <div class="day-header">
-            <div class="day-badge">Fri</div>
-            <div class="day-title">
-              <strong>Ranked Grind</strong>
-              <span class="day-time">9:00 PM CET</span>
-            </div>
-          </div>
-          <span class="schedule-tag">Ranked</span>
-        </div>
-
-        <div class="schedule-card">
-          <div class="day-header">
-            <div class="day-badge">Sun</div>
-            <div class="day-title">
-              <strong>Chill Stream</strong>
-              <span class="day-time">6:00 PM CET</span>
-            </div>
-          </div>
-          <span class="schedule-tag">Relaxed</span>
+        <div class="contact-links">
+          <a href="https://www.twitch.tv/geggi1984" target="_blank" class="social-btn" title="Twitch">🟣</a>
+          <a href="https://www.youtube.com/@geggi1984" target="_blank" class="social-btn" title="YouTube">▶️</a>
+          <a href="https://discord.com/" target="_blank" class="social-btn" title="Discord">💬</a>
+          <a href="https://twitter.com/" target="_blank" class="social-btn" title="Twitter">𝕏</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About GeggiTV</h2>
-      <p class="section-subtitle">Bringing Norwegian gaming vibes to the streaming world</p>
-      
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-icon">🎯</div>
-          <h3>Competitive Gaming</h3>
-          <p>High-intensity ranked matches and challenging gameplay to push the limits and entertain the community.</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>🎮 Twitch</h3>
+          <p>Følg og se live streams på Twitch-kanalen min</p>
+          <a href="https://www.twitch.tv/geggi1984" target="_blank" style="color: var(--secondary-light); text-decoration: none; font-weight: 600;">
+            twitch.tv/geggi1984 →
+          </a>
         </div>
 
-        <div class="about-card">
-          <div class="about-icon">🤝</div>
-          <h3>Community First</h3>
-          <p>Interactive streams with chat integration, community challenges, and viewer participation every session.</p>
+        <div class="contact-item">
+          <h3>📺 YouTube</h3>
+          <p>Se fullstendige VODs og highlights på YouTube</p>
+          <a href="https://www.youtube.com/@geggi1984" target="_blank" style="color: var(--secondary-light); text-decoration: none; font-weight: 600;">
+            @geggi1984 →
+          </a>
         </div>
 
-        <div class="about-card">
-          <div class="about-icon">🌍</div>
-          <h3>Norwegian Pride</h3>
-          <p>Bringing Scandinavian gaming culture and Nordic pride to the global streaming community.</p>
+        <div class="contact-item">
+          <h3>💬 Community</h3>
+          <p>Bli del av communityet på Discord og sosiale kanaler</p>
+          <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Vil du samarbeide eller har spørsmål? Kontakt meg gjennom sosiale medier.
+          </p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Connect Section -->
-  <section id="links">
-    <div class="container">
-      <h2>Connect With GeggiTV</h2>
-      <p class="section-subtitle">Follow and support across all platforms</p>
-      
-      <div class="links-grid">
-        <a href="https://www.twitch.tv/geggi1984" target="_blank" class="link-card">
-          <div class="link-icon">🟣</div>
-          <h3>Twitch</h3>
-          <p>Watch live streams and highlights</p>
-        </a>
-
-        <a href="https://www.youtube.com/@geggi1984" target="_blank" class="link-card">
-          <div class="link-icon">▶️</div>
-          <h3>YouTube</h3>
-          <p>Full VODs and best moments</p>
-        </a>
-
-        <a href="https://discord.com/" target="_blank" class="link-card">
-          <div class="link-icon">💬</div>
-          <h3>Discord</h3>
-          <p>Join the community server</p>
-        </a>
-
-        <a href="https://twitter.com/" target="_blank" class="link-card">
-          <div class="link-icon">𝕏</div>
-          <h3>Twitter</h3>
-          <p>Daily updates and announcements</p>
-        </a>
       </div>
     </div>
   </section>
@@ -800,22 +752,11 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-content">
-        <div>
-          <p>&copy; 2024 GeggiTV. All rights reserved. | Norwegian Gaming Excellence</p>
-        </div>
-        <div class="social-links">
-          <a href="https://www.twitch.tv/geggi1984" target="_blank" class="social-btn" title="Twitch">🟣</a>
-          <a href="https://www.youtube.com/@geggi1984" target="_blank" class="social-btn" title="YouTube">▶️</a>
-          <a href="https://discord.com/" target="_blank" class="social-btn" title="Discord">💬</a>
-          <a href="https://twitter.com/" target="_blank" class="social-btn" title="Twitter">𝕏</a>
-        </div>
-      </div>
+      <p>&copy; 2024 GeggiTV. Alle rettigheter reservert. | Norsk Gaming Streamer</p>
     </div>
   </footer>
 
   <script>
-    // Mobile menu toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navLinks = document.getElementById('navLinks');
 
@@ -823,20 +764,10 @@
       navLinks.classList.toggle('active');
     });
 
-    // Close mobile menu when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
       });
-    });
-
-    // Update current year in footer
-    document.addEventListener('DOMContentLoaded', () => {
-      const year = new Date().getFullYear();
-      const footerText = document.querySelector('footer p');
-      if (footerText) {
-        footerText.textContent = `© ${year} GeggiTV. All rights reserved. | Norwegian Gaming Excellence`;
-      }
     });
   </script>
 </body>
