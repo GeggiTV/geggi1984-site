@@ -39,7 +39,7 @@
     <div class="hero-background"></div>
     <div class="container">
       <div class="hero-content">
-        <h1 class="hero-title" data-i18n="hero.title">Hei, jeg er Geggi1984</h1>
+        <h1 class="hero-title" data-text="Hei, jeg er Geggi1984" data-i18n="hero.title">Hei, jeg er Geggi1984</h1>
         <p class="hero-subtitle" data-i18n="hero.subtitle">Norsk gaming streamer med energi, humor og community i fokus</p>
         <div class="hero-buttons">
           <a href="#direkte" class="btn btn-primary" data-i18n="hero.watchLive">🎮 Se direkte</a>
@@ -102,15 +102,15 @@
   <section id="nyheter" class="section">
     <div class="container">
       <h2 class="section-title" data-i18n="news.title">Nyheter</h2>
-      <p class="section-subtitle" data-i18n="news.subtitle">Oppdateringer, highlights og status</p>
+      <p class="section-subtitle" data-i18n="news.subtitle">Oppdateringer og nyheter</p>
       <div class="news-grid" id="newsGrid"></div>
       <div class="empty-state" id="newsEmpty">
-        <p data-i18n="news.empty">Ingen nyheter oppdatert ennå.</p>
+        <p data-i18n="news.empty">Ingen nyheter lagt ut ennå.</p>
       </div>
     </div>
   </section>
 
-  <section id="om" class="section">
+  <section id="om" class="section alt-bg">
     <div class="container">
       <h2 class="section-title" data-i18n="about.title">Om meg</h2>
       <div class="about-content">
@@ -119,24 +119,21 @@
     </div>
   </section>
 
-  <section id="fellesskap" class="section alt-bg">
+  <section id="fellesskap" class="section">
     <div class="container">
       <h2 class="section-title" data-i18n="community.title">Fellesskap</h2>
       <p class="section-subtitle" data-i18n="community.subtitle">Bli med i fellesskapet</p>
-
       <div class="community-grid">
         <div class="community-card">
           <h3 data-i18n="community.discord">Discord</h3>
           <p data-i18n="community.discordDesc">Chat med andre, få oppdateringer og bli med i diskusjonene.</p>
-          <a href="#" class="btn btn-secondary" id="discordButton" data-i18n="community.joinDiscord">Bli med</a>
+          <a href="#" class="btn btn-primary" id="discordButton" data-i18n="community.joinDiscord">Bli med</a>
         </div>
-
         <div class="community-card">
-          <h3 data-i18n="community.twitch">Twitch chat</h3>
+          <h3 data-i18n="community.twitch">Twitch Chat</h3>
           <p data-i18n="community.twitchDesc">Delta i chatten under streamen og vær med i det hele.</p>
-          <a href="https://www.twitch.tv/geggi1984/chat" target="_blank" class="btn btn-secondary" data-i18n="community.openChat">Åpne chat</a>
+          <a href="https://www.twitch.tv/geggi1984/chat" target="_blank" class="btn btn-primary" data-i18n="community.openChat">Åpne chat</a>
         </div>
-
         <div class="community-card">
           <h3 data-i18n="community.social">Sosiale medier</h3>
           <p data-i18n="community.socialDesc">Følg meg for oppdateringer, clips og gaminginnhold.</p>
@@ -146,53 +143,46 @@
     </div>
   </section>
 
-  <section id="stott" class="section">
+  <section id="stott" class="section alt-bg">
     <div class="container">
       <h2 class="section-title" data-i18n="support.title">Støtt streamen</h2>
-      <p class="section-subtitle" data-i18n="support.subtitle">Hjelp meg med å lage bedre innhold</p>
-
+      <p class="section-subtitle" data-i18n="support.subtitle">Hjelp meg å lage bedre innhold</p>
       <div class="support-grid">
         <div class="support-card">
           <h3 data-i18n="support.twitch">Abonnement</h3>
           <p data-i18n="support.twitchDesc">Støtt meg på Twitch med et abonnement.</p>
           <a href="https://www.twitch.tv/geggi1984/subscribe" target="_blank" class="btn btn-primary" data-i18n="support.subscribe">Abonner</a>
         </div>
-
         <div class="support-card">
           <h3 data-i18n="support.vipps">Vipps</h3>
-          <p class="vipps-number" id="vippsNumber">123 45 678</p>
+          <p class="vipps-number" id="vippsNumber"></p>
           <p data-i18n="support.vippsDesc">Send en donasjon direkte via Vipps.</p>
         </div>
-
         <div class="support-card">
           <h3 data-i18n="support.tips">Tips og donasjon</h3>
           <p data-i18n="support.tipsDesc">Hjelp meg å fortsette med streamingen.</p>
           <a href="https://www.twitch.tv/geggi1984" target="_blank" class="btn btn-primary" data-i18n="support.donate">Send tips</a>
         </div>
       </div>
-
-      <div class="support-note">
+      <div class="schedule-note">
         <p data-i18n="support.thanks">Tusen takk for all støtten! Det betyr mye for meg.</p>
       </div>
     </div>
   </section>
 
-  <section id="kontakt" class="section alt-bg">
+  <section id="kontakt" class="section">
     <div class="container">
       <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
       <p class="section-subtitle" data-i18n="contact.subtitle">Ta kontakt</p>
-
       <div class="contact-grid">
         <div class="contact-card">
           <h3 data-i18n="contact.email">E-post</h3>
           <p id="emailContact"></p>
         </div>
-
         <div class="contact-card">
           <h3 data-i18n="contact.twitch">Twitch</h3>
-          <p><a href="https://www.twitch.tv/geggi1984" target="_blank">twitch.tv/geggi1984</a></p>
+          <p><a href="https://www.twitch.tv/geggi1984" target="_blank" style="color: #00d4ff;">twitch.tv/geggi1984</a></p>
         </div>
-
         <div class="contact-card">
           <h3 data-i18n="contact.social">Sosiale medier</h3>
           <p id="contactSocial"></p>
@@ -203,7 +193,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Geggi1984. <span data-i18n="footer.rights">Alle rettigheter reservert.</span></p>
+      <p>&copy; 2024 Geggi1984. <span data-i18n="footer.rights">Alle rettigheter reservert.</span></p>
     </div>
   </footer>
 
