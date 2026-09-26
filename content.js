@@ -206,11 +206,11 @@ const siteContent = {
       description_en: "A short guide to better gameplay and smarter decisions."
     },
     {
-      title_no: "Min livestream",
-      title_en: "My livestream",
+      title_no: "007 First Light",
+      title_en: "007 First Light",
       videoId: "q7-mz5k1TsU",
-      description_no: "Opptak fra streamen min.",
-      description_en: "Recording from my stream."
+      description_no: "",
+      description_en: ""
       },
     {
       title_no: "Highlight fra streamen",
