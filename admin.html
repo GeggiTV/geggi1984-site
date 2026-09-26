@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Geggi1984</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <div class="admin-container">
+    <header class="admin-header">
+      <div class="admin-header-content">
+        <h1>🎮 Geggi1984 Admin Panel</h1>
+        <a href="/" class="btn-back">Tilbake til nettstedet</a>
+      </div>
+    </header>
+
+    <nav class="admin-nav">
+      <button class="nav-btn active" data-section="videos">Videoer</button>
+      <button class="nav-btn" data-section="clips">Klipp</button>
+      <button class="nav-btn" data-section="schedule">Streamplan</button>
+      <button class="nav-btn" data-section="news">Nyheter</button>
+      <button class="nav-btn" data-section="about">Om meg</button>
+      <button class="nav-btn" data-section="social">Sosiale medier</button>
+      <button class="nav-btn" data-section="export">Eksporter data</button>
+    </nav>
+
+    <div class="admin-content">
+      <!-- VIDEOS SECTION -->
+      <section id="videos" class="section-content active">
+        <h2>Rediger videoer</h2>
+        <p class="section-desc">YouTube videoer som vises på nettstedet</p>
+        <div id="videosList" class="items-list"></div>
+        <button class="btn-add" id="addVideoBtn">+ Legg til video</button>
+      </section>
+
+      <!-- CLIPS SECTION -->
+      <section id="clips" class="section-content">
+        <h2>Rediger Twitch-klipp</h2>
+        <p class="section-desc">Klipp fra Twitch som vises på nettstedet</p>
+        <div id="clipsList" class="items-list"></div>
+        <button class="btn-add" id="addClipBtn">+ Legg til klipp</button>
+      </section>
+
+      <!-- SCHEDULE SECTION -->
+      <section id="schedule" class="section-content">
+        <h2>Rediger streamplan</h2>
+        <p class="section-desc">Dine streaming tider og spill</p>
+        <div id="scheduleList" class="items-list"></div>
+        <button class="btn-add" id="addScheduleBtn">+ Legg til streamtid</button>
+      </section>
+
+      <!-- NEWS SECTION -->
+      <section id="news" class="section-content">
+        <h2>Rediger nyheter</h2>
+        <p class="section-desc">Oppdateringer og nyheter på nettstedet</p>
+        <div id="newsList" class="items-list"></div>
+        <button class="btn-add" id="addNewsBtn">+ Legg til nyhet</button>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section-content">
+        <h2>Rediger Om meg-tekst</h2>
+        <p class="section-desc">Din presentasjonstekst på nettstedet</p>
+        <div class="form-group">
+          <label>Norsk tekst:</label>
+          <textarea id="aboutNo" class="textarea-large" placeholder="Skriv din norske presentasjonstekst..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>English text:</label>
+          <textarea id="aboutEn" class="textarea-large" placeholder="Write your English presentation text..."></textarea>
+        </div>
+        <button class="btn-save" id="saveAboutBtn">Lagre om meg</button>
+      </section>
+
+      <!-- SOCIAL LINKS SECTION -->
+      <section id="social" class="section-content">
+        <h2>Rediger sosiale medier</h2>
+        <p class="section-desc">Dine sosiale media-linker</p>
+        <div id="socialList" class="items-list"></div>
+        <button class="btn-add" id="addSocialBtn">+ Legg til lenke</button>
+      </section>
+
+      <!-- EXPORT SECTION -->
+      <section id="export" class="section-content">
+        <h2>Sikkerhetskopi og eksport</h2>
+        <p class="section-desc">Last ned eller last opp dine data</p>
+        <div class="export-section">
+          <h3>Eksporter data</h3>
+          <p>Last ned alt innholdet ditt som en JSON-fil</p>
+          <button class="btn-export" id="downloadBtn">📥 Last ned data</button>
+        </div>
+        <div class="export-section">
+          <h3>Importer data</h3>
+          <p>Last opp en tidligere eksportert JSON-fil</p>
+          <input type="file" id="importFile" accept=".json" style="display:none">
+          <button class="btn-import" id="uploadBtn">📤 Last opp data</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- MODAL FOR EDITING ITEMS -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="modalForm"></div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
