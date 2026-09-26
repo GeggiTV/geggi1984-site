@@ -197,7 +197,7 @@ const siteContent = {
     }
   ],
 
-  videos: videos: [
+  videos:  [
   {
     title_no: "007 First Light",
     title_en: "007 First Light",
