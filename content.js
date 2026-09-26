@@ -206,6 +206,13 @@ const siteContent = {
       description_en: "A short guide to better gameplay and smarter decisions."
     },
     {
+      title_no: "Min livestream",
+      title_en: "My livestream",
+      videoId: "q7-mz5k1TsU",
+      description_no: "Opptak fra streamen min.",
+      description_en: "Recording from my stream."
+      }
+    {
       title_no: "Highlight fra streamen",
       title_en: "Stream highlight",
       videoId: "ScMz7w6DENS",
